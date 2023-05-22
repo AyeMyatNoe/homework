@@ -1,0 +1,1881 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Movie</title>
+    <link rel="stylesheet" href="../dist/output.css" />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </head>
+  <script src="./script.js " defer></script>
+  <body class="overflow-x-hidden bg-black">
+    <div class="home">
+      <img
+        src="../movies/yannick-van-der-schot-p4RbIDJAfZg-unsplash.jpg"
+        alt=""
+        class="relative"
+      />
+      <nav class="w-full text-white bg-gray-900 px-2 py-1 flex items-center justify-start absolute top-0">
+        <div class="container mx-auto flex items-center justify-start space-x-28 sticky top-0">
+        <div class="flex items-center ">
+          <ion-icon name="logo-mastodon" class="text-4xl"></ion-icon>
+          <span class="text-[30px]">Name</span>
+          </div>
+        <div>
+          <ul class="hidden md:flex space-x-4 items-center">
+            <li class="hover:underline decoration-solid hover:text-green-500 transition-all delay-75 cursor-pointer" >Home</li>
+            <li class="hover:underline decoration-solid hover:text-green-500 transition-all delay-75 cursor-pointer" id="country">Country</li>
+            <li class="hover:underline decoration-solid hover:text-green-500 transition-all delay-75 cursor-pointer" id="movies">Movies</li>
+            <li class="hover:underline decoration-solid hover:text-green-500 transition-all delay-75 cursor-pointer" id="shows">TV Shows</li>
+            <li class="hover:underline decoration-solid hover:text-green-500 transition-all delay-75 cursor-pointer" id="IMDB">Top IMDB</li>
+            <li class="hover:underline decoration-solid hover:text-green-500 transition-all delay-75 cursor-pointer" id="Andoid">Andoid App</li>
+            <li>
+              <button id="login" class="bg-green-600 hover:bg-gray-500 cursor-pointer rounded-lg px-3 py-1">Log in</button>
+            </li>
+            <li>
+              <button
+                class="px-10 py-2 bg-slate-500 flex items-center space-x-2 rounded-2xl"
+              >
+                <ion-icon name="search-outline"></ion-icon>Enter Keywords...
+              </button>
+            </li>   
+          </ul>   
+        </div>
+
+        <ion-icon id="menuBtn"
+          name="menu-outline"
+          class="flex self-end md:hidden text-4xl"
+        ></ion-icon>
+      </nav>
+    
+    <section
+      class="mobileMenu hidden absolute top-0 bg-black z-[10] w-full text-3xl flex-col justify-center text-white "
+    >
+      <div class="container mx-auto flex justify-between items-center py-5">
+        <div class="flex justify-start">
+        <ion-icon name="logo-mastodon" class="text-4xl"></ion-icon>
+        <span class="text-[50px]">Name</span>
+      </div>
+        <ion-icon
+          id="close"
+          name="close-outline"
+          class="text-white text-4xl self-end"
+        ></ion-icon>
+      </div>
+        <ul class="flex flex-col space-y-10 items-center min-h-screen">
+          <li class="hover:underline decoration-solid hover:text-green-500 transition-all delay-75 cursor-pointer" id="home4">Home</li>
+            <li class="hover:underline decoration-solid hover:text-green-500 transition-all delay-75 cursor-pointer" id="country4">Country</li>
+            <li class="hover:underline decoration-solid hover:text-green-500 transition-all delay-75 cursor-pointer" id="movies4">Movies</li>
+            <li class="hover:underline decoration-solid hover:text-green-500 transition-all delay-75 cursor-pointer" id="shows4">TV Shows</li>
+            <li class="hover:underline decoration-solid hover:text-green-500 transition-all delay-75 cursor-pointer" id="IMDB4">Top IMDB</li>
+            <li class="hover:underline decoration-solid hover:text-green-500 transition-all delay-75 cursor-pointer" id="andoid4">Andoid App</li>
+            <li>
+              <button id="login1" class="bg-green-600 hover:bg-gray-500 cursor-pointer rounded-lg px-3 py-1">Log in</button>
+            </li>
+        </ul>
+        <ul class="flex space-x-5 justify-center items-center cursor-pointer text-white" >
+        <li>
+          <ion-icon
+            name="logo-facebook"
+            class="hover:text-green-500 text-4xl"
+          ></ion-icon>
+        </li>
+        <li>
+          <ion-icon
+            name="logo-twitter"
+            class="hover:text-green-500 text-4xl"
+          ></ion-icon>
+        </li>
+      </ul>
+        </section>
+      <!--Desktop-->
+      <div
+        class="hidden md:flex flex-col px-5 absolute md:top-[600px] text-white"
+      >
+        <h1 class="text-[40px]">Money Heist</h1>
+        <div>
+          <ul class="flex flex-row space-x-4">
+            <li>
+              <button
+                class="text-black rounded-lg bg-green-600 py-[0.5] px-2 text-[20px]"
+              >
+                HD
+              </button>
+            </li>
+            <li class="text-[13px]">Duration: 95 min</li>
+            <li class="text-[13px]">IMDB: 8.2</li>
+            <li class="text-[13px]">Genre : Heist; Crime drama; Thriller</li>
+          </ul>
+        </div>
+        <p class="text-[16px]">
+          criminal mastermind who goes by "The Professor" has a plan to pull off
+          the biggest heist in recorded history<br />
+          -- to print billions of euros in the Royal Mint of Spain. To help him
+          carry out the ambitious plan, he recruits<br />
+          eight people with certain abilities and who have nothing to lose. The
+          group ....
+        </p>
+        <button
+          class="flex flex-row space-x-1 items-center border border-emerald-600 border-solid rounded-xl py-1 px-4 text-[16px]"
+        >
+          <ion-icon
+            name="caret-forward-outline"
+            class="text-green-600"
+          ></ion-icon
+          >Watch Now
+        </button>
+      </div>
+      <!--Mobile-->
+      <div
+        class="flex flex-col px-5 absolute top-[110px] text-white justify-center items-center space-y-2 md:hidden"
+      >
+        <div class="text-left">
+          <div class="flex flex-row justify-around items-center">
+            <h1 class="text-[25px]">Money Heist</h1>
+            <button
+              class="text-black rounded-lg bg-green-600 py-[0.5] px-2 text-[18px]"
+            >
+              HD
+            </button>
+          </div>
+          <div>
+            <ul class="flex flex-col space-y-[0.5]">
+              <li class="text-[10px]">Duration: 95 min</li>
+              <li class="text-[10px]">IMDB: 8.2</li>
+              <li class="text-[10px]">Genre : Heist; Crime drama; Thriller</li>
+            </ul>
+          </div>
+          <p class="text-[10px]">
+            criminal mastermind who goes by "The Professor" has a plan<br />
+            to pull off the biggest heist in recorded history -- to print<br />
+            billions of euros in the Royal Mint of Spain. To help him carry
+            <br />
+            out the ambitious plan, he recruits eight people with certain <br />
+            abilities and who have nothing to lose. The group ....
+          </p>
+          <button
+            class="flex flex-row space-x-1 items-center border border-emerald-600 border-solid rounded-xl py-1 px-2 text-[13px]"
+          >
+            <ion-icon
+              name="caret-forward-outline"
+              class="text-green-600"
+            ></ion-icon
+            >Watch Now
+          </button>
+        </div>
+      </div>
+ 
+    
+    <!--Start Hero Section-->
+    <section
+      class="bg-gray-600 px-5 flex flex-col justify-between flex-wrap"
+    >
+      <div class="w-full flex flex-row justify-between items-center text-white">
+        <div class="flex justify-start items-center">
+          <div class="w-2 h-10 bg-green-600 "></div>
+          <span class="text-[40px]">Movie</span>
+        </div>
+        
+        <p class="border-solid border-green-500 border-2 rounded-lg px-3">
+          SEE ALL
+        </p>
+      </div>
+      <div class="flex flex-row justify-between items-center space-x-3">
+        <div class="bg-black w-52 h-64 rounded-lg relative">
+          <img id="m2" src="../movies/film.jpg" alt="" class="w-60 h-[210px] rounded-t-lg" />
+          <div
+            class="flex justify-between items-center absolute bottom-[20px] text-white"
+          >
+            <p>Name1</p>
+            <p>2023</p>
+          </div>
+        </div>
+        <div class="bg-black w-52 h-64 rounded-lg relative">
+          <img src="../movies/judy.jpg" alt="" class="w-60 h-[210px] rounded-t-lg" />
+          <div
+            class="flex justify-between items-center absolute bottom-[20px] text-white"
+          >
+            <p>Name1</p>
+            <p>2023</p>
+          </div>
+        </div>
+        <div class="bg-black w-52 h-64 rounded-lg relative">
+          <img src="../movies/spider.jpg" alt="" class="w-60 h-[210px] rounded-t-lg" />
+          <div
+            class="flex justify-between items-center absolute bottom-[20px] text-white"
+          >
+            <p>Name1</p>
+            <p>2023</p>
+          </div>
+        </div>
+        <div class="bg-black w-52 h-64 rounded-lg relative">
+          <img src="../movies/tim-oun-uXCy7ixz30w-unsplash.jpg" alt="" class="w-60 h-[210px] rounded-t-lg" />
+          <div class="flex justify-between absolute bottom-[20px] text-white">
+            <p>Name1</p>
+            <p>2023</p>
+          </div>
+        </div>
+        <div class="bg-black w-52 h-64 rounded-lg relative">
+          <img src="../movies/carol-kennedy-1rojtQgU0p4-unsplash.jpg" alt="" class="w-60 h-[210px] rounded-t-lg" />
+          <div
+            class="flex justify-between items-center absolute bottom-[20px] text-white"
+          >
+            <p>Name1</p>
+            <p>2023</p>
+          </div>
+        </div>
+        <div class="bg-black w-52 h-64 rounded-lg relative">
+          <img src="../movies/darryl-brian-rgPRoZt8yg4-unsplash.jpg" alt="" class="w-60 h-[210px] rounded-t-lg" />
+          <div
+            class="flex justify-between items-center absolute bottom-[20px] text-white"
+          >
+            <p>Name1</p>
+            <p>2023</p>
+          </div>
+        </div>
+      </div>
+      <!--next row-->
+      <div class="flex flex-row justify-between items-center space-x-3 mt-3">
+        <div class="bg-black w-52 h-64 rounded-lg relative">
+          <img src="../movies/yannick-van-der-schot-p4RbIDJAfZg-unsplash.jpg" alt="" class="w-60 h-[210px] rounded-t-lg" />
+          <div
+            class="flex justify-between items-center absolute bottom-[20px] text-white"
+          >
+            <p>Name1</p>
+            <p>2023</p>
+          </div>
+        </div>
+        <div class="bg-black w-52 h-64 rounded-lg relative">
+          <img src="../movies/dev-d2Py_uhXJQo-unsplash.jpg" alt="" class="w-60 h-[210px] rounded-t-lg" />
+          <div
+            class="flex justify-between items-center absolute bottom-[20px] text-white"
+          >
+            <p>Name1</p>
+            <p>2023</p>
+          </div>
+        </div>
+        <div class="bg-black w-52 h-64 rounded-lg relative">
+          <img src="../movies/erik-mclean-Np_8Kt_QHZU-unsplash.jpg" alt="" class="w-60 h-[210px] rounded-t-lg" />
+          <div
+            class="flex justify-between items-center absolute bottom-[20px] text-white"
+          >
+            <p>Name1</p>
+            <p>2023</p>
+          </div>
+        </div>
+        <div class="bg-black w-52 h-64 rounded-lg relative">
+          <img src="../movies/tim-oun-uXCy7ixz30w-unsplash.jpg" alt="" class="w-60 h-[210px] rounded-t-lg" />
+          <div
+            class="flex justify-between items-center absolute bottom-[20px] text-white"
+          >
+            <p>Name1</p>
+            <p>2023</p>
+          </div>
+        </div>
+        <div class="bg-black w-52 h-64 rounded-lg relative">
+          <img src="../movies/film.jpg" alt="" class="w-60 h-[210px] rounded-t-lg " />
+          <div
+            class="flex justify-between items-center absolute bottom-[20px] text-white"
+          >
+            <p>Name1</p>
+            <p>2023</p>
+          </div>
+        </div>
+        <div class="bg-black w-52 h-64 rounded-lg relative">
+          <img src="../movies/collection.jpg" alt="" class="w-60 h-[210px] rounded-t-lg" />
+          <div
+            class="flex justify-between items-center absolute bottom-[20px] text-white"
+          >
+            <p>Name1</p>
+            <p>2023</p>
+          </div>
+        </div>
+      </div>
+      <hr class="w-[1300px] h-5 text-black text-center mt-4" />
+      <!--Start Series-->
+      <div class="w-full flex flex-row justify-between items-center text-white">
+        <div class="flex justify-start items-center">
+          <div class="w-2 h-10 bg-green-600 "></div>
+          <span class="text-[40px]">Series</span>
+        </div>
+        <p class="border-solid border-green-500 border-2 rounded-lg px-3">
+          SEE ALL
+        </p>
+      </div>
+      <div class="flex flex-row justify-between items-center space-x-3">
+        <div class="bg-black w-52 h-64 rounded-lg relative">
+          <img src="../movies/film.jpg" alt="" class="w-60 h-[210px] rounded-t-lg" />
+          <div
+            class="flex justify-between items-center absolute bottom-[20px] text-white"
+          >
+            <p>Name1</p>
+            <p>2023</p>
+          </div>
+        </div>
+        <div class="bg-black w-52 h-64 rounded-lg relative">
+          <img src="../movies/judy.jpg" alt="" class="w-60 h-[210px] rounded-t-lg" />
+          <div
+            class="flex justify-between items-center absolute bottom-[20px] text-white"
+          >
+            <p>Name1</p>
+            <p>2023</p>
+          </div>
+        </div>
+        <div class="bg-black w-52 h-64 rounded-lg relative">
+          <img src="../movies/spider.jpg" alt="" class="w-60 h-[210px] rounded-t-lg" />
+          <div
+            class="flex justify-between items-center absolute bottom-[20px] text-white"
+          >
+            <p>Name1</p>
+            <p>2023</p>
+          </div>
+        </div>
+        <div class="bg-black w-52 h-64 rounded-lg relative">
+          <img src="../movies/tim-oun-uXCy7ixz30w-unsplash.jpg" alt="" class="w-60 h-[210px] rounded-t-lg" />
+          <div class="flex justify-between absolute bottom-[20px] text-white">
+            <p>Name1</p>
+            <p>2023</p>
+          </div>
+        </div>
+        <div class="bg-black w-52 h-64 rounded-lg relative">
+          <img src="../movies/carol-kennedy-1rojtQgU0p4-unsplash.jpg" alt="" class="w-60 h-[210px] rounded-t-lg" />
+          <div
+            class="flex justify-between items-center absolute bottom-[20px] text-white"
+          >
+            <p>Name1</p>
+            <p>2023</p>
+          </div>
+        </div>
+        <div class="bg-black w-52 h-64 rounded-lg relative">
+          <img src="../movies/darryl-brian-rgPRoZt8yg4-unsplash.jpg" alt="" class="w-60 h-[210px] rounded-t-lg" />
+          <div
+            class="flex justify-between items-center absolute bottom-[20px] text-white"
+          >
+            <p>Name1</p>
+            <p>2023</p>
+          </div>
+        </div>
+      </div>
+      <!--next row-->
+      <div class="flex flex-row justify-between items-center space-x-3 mt-3">
+        <div class="bg-black w-52 h-64 rounded-lg relative">
+          <img src="../movies/yannick-van-der-schot-p4RbIDJAfZg-unsplash.jpg" alt="" class="w-60 h-[210px] rounded-t-lg" />
+          <div
+            class="flex justify-between items-center absolute bottom-[20px] text-white"
+          >
+            <p>Name1</p>
+            <p>2023</p>
+          </div>
+        </div>
+        <div class="bg-black w-52 h-64 rounded-lg relative">
+          <img src="../movies/dev-d2Py_uhXJQo-unsplash.jpg" alt="" class="w-60 h-[210px] rounded-t-lg" />
+          <div
+            class="flex justify-between items-center absolute bottom-[20px] text-white"
+          >
+            <p>Name1</p>
+            <p>2023</p>
+          </div>
+        </div>
+        <div class="bg-black w-52 h-64 rounded-lg relative">
+          <img src="../movies/erik-mclean-Np_8Kt_QHZU-unsplash.jpg" alt="" class="w-60 h-[210px] rounded-t-lg" />
+          <div
+            class="flex justify-between items-center absolute bottom-[20px] text-white"
+          >
+            <p>Name1</p>
+            <p>2023</p>
+          </div>
+        </div>
+        <div class="bg-black w-52 h-64 rounded-lg relative">
+          <img src="../movies/tim-oun-uXCy7ixz30w-unsplash.jpg" alt="" class="w-60 h-[210px] rounded-t-lg" />
+          <div
+            class="flex justify-between items-center absolute bottom-[20px] text-white"
+          >
+            <p>Name1</p>
+            <p>2023</p>
+          </div>
+        </div>
+        <div class="bg-black w-52 h-64 rounded-lg relative">
+          <img src="../movies/film.jpg" alt="" class="w-60 h-[210px] rounded-t-lg " />
+          <div
+            class="flex justify-between items-center absolute bottom-[20px] text-white"
+          >
+            <p>Name1</p>
+            <p>2023</p>
+          </div>
+        </div>
+        <div class="bg-black w-52 h-64 rounded-lg relative">
+          <img src="../movies/collection.jpg" alt="" class="w-60 h-[210px] rounded-t-lg" />
+          <div
+            class="flex justify-between items-center absolute bottom-[20px] text-white"
+          >
+            <p>Name1</p>
+            <p>2023</p>
+          </div>
+        </div>
+      </div>
+      <hr class="w-[1300px] h-5 text-black text-center mt-4" />
+    </section>
+    <!--Start contact-->
+    <section
+      class="flex flex-col justify-center items-center text-white bg-black"
+    >
+      <div class="text-left">
+        <p class="text-[40px]">Contact Us</p>
+        <p class="opacity-[0.5]">
+          - Have question and need to talk to us? Please complete this <br />
+          form and we will get in touch as soon as possible.
+        </p>
+        <p class="opacity-[0.5]">Your email</p>
+        <input
+          type="text"
+          class="placeholder opacity-[0.5] text-black bg-white w-96"
+          value="name@example.com"
+        />
+        <p class="opacity-[0.5]">Subject</p>
+        <input type="text" class="bg-white w-96" />
+        <p class="opacity-[0.5]">Message</p>
+        <input type="text" class="bg-white w-96 h-40 mb-10" />
+      </div>
+    </section>
+    <!--Start footer-->
+    <footer class="bg-gray-900">
+      <div class="mx-auto w-full max-w-screen-xl">
+        <div class="grid grid-cols-3 gap-8 px-4 py-6 lg:py-8 md:grid-cols-5 md:gap-4">
+          <div>
+              <h2 class="mb-6 text-[20px] font-semibold text-white">Links</h2>
+              <ul class="text-gray-500 dark:text-gray-400 font-medium">
+                  <li class="mb-4">
+                      <a href="#" class=" hover:underline">Movies</a>
+                  </li>
+                  <li class="mb-4">
+                      <a href="#" class="hover:underline">TV shows</a>
+                  </li>
+                  <li class="mb-4">
+                      <a href="#" class="hover:underline">Top IMDB</a>
+                  </li>
+              </ul>
+          </div>
+          <div>
+              
+              <ul class="text-gray-500 dark:text-gray-400 font-medium">
+                  <li class="mb-4">
+                      <a href="#" class="hover:underline">Action Movies</a>
+                  </li>
+                  <li class="mb-4">
+                      <a href="#" class="hover:underline">Horror Movies</a>
+                  </li>
+                  <li class="mb-4">
+                      <a href="#" class="hover:underline">Sci-fic Movies</a>
+                  </li>
+                  <li class="mb-4">
+                      <a href="#" class="hover:underline">Thriller Movies</a>
+                  </li>
+              </ul>
+          </div>
+          <div>
+              
+              <ul class="text-gray-500 dark:text-gray-400 font-medium">
+                  <li class="mb-4">
+                      <a href="#" class="hover:underline">Android App</a>
+                  </li>
+                  <li class="mb-4">
+                      <a href="#" class="hover:underline">Contact</a>
+                  </li>
+                  <li class="mb-4">
+                      <a href="#" class="hover:underline">Term of service</a>
+                  </li>
+                  <li class="mb-4">
+                    <a href="#" class="hover:underline"><li class="mb-4">
+                      <a href="#" class="hover:underline">Sitemap</a>
+                  </li></a>
+                </li>
+              </ul>
+          </div>
+          <div>
+              <h2 class="mb-6 text-[20px] font-semibold text-white">About Us</h2>
+              <ul class="text-gray-500 dark:text-gray-400 font-medium">
+                  <li class="mb-4">
+                      <a href="#" class="w-full">This is free tv shows streaming website with zero ads, it allows you watch tv shows online, watch tv shows online free in<br>
+                        high quality for free. You can also download full tv shows and watch it later if you want.<br>
+                        This site does not store any files on our server, we only linked to the media which is hosted on 3rd party services.
+                      </a>
+                  </li>
+              </ul>
+              <div class="text-green-500 flex flex-row space-x-4 items-center">
+                <p class="text-[8px] xl:text-[15px]">High quality</p>
+                <p class="text-[8px] xl:text-[15px]">Free forever</p>
+                <p class="text-[8px] xl:text-[15px]">Fast load</p>
+                <p class="text-[8px] xl:text-[15px]">Multi subtitles</p>
+              </div>
+          </div>
+          <div>
+            <img src="../movies/thomas-kinto-6MsMKWzJWKc-unsplash.jpg" alt="" class="w-[700px] hidden md:block">
+          </div>
+      </div>
+      </div>
+    </div>
+  </div>
+    <!--Start Next Page-->
+    <div class="hidden moviePg">
+    <div class="container mx-auto">
+      <img src="../movies/yannick-van-der-schot-p4RbIDJAfZg-unsplash.jpg" alt="" class="relative">
+      <ion-icon name="play-circle-outline" class="text-green-500 text-9xl absolute top-96"></ion-icon>
+    </div>
+    <section class="bg-slate-900 container mx-auto px-5">
+      <hr class="w-1200">
+      <div class="flex text-white">
+        <img src="" alt="">
+        <div class="flex flex-col space-y-2">
+          <p class="text-[30px] font-semibold">Money Heist</p>
+          <div class="flex space-x-3">
+            <button class="text-black rounded-lg bg-green-600 py-[0.5] px-2 text-[18px]">HD</button>
+            <p >7.6</p>
+            <p>134min</p>
+          </div>
+          <p>A criminal mastermind who goes by "The Professor" has a plan to pull off the<br>
+            biggest heist in recorded history -- to print billions of euros in the Royal Mint of<br>
+            Spain. To help him carry out the ambitious plan, he recruits eight people with <br>
+            certain abilities and who have nothing to lose. The group of thieves take <br>
+            hostages to aid in their negotiations with the authorities, who strategize<br> 
+            to come up with a way to capture The Professor. As more time elapses, <br>
+            the robbers prepare for a showdown with the police.</p>
+            <p>country  :  Canada, United States  Of America</p>
+            <p>genre  :  Heist, Crime drama, Thriller</p>
+            <p>production  :  Entertainment One, Paramount</p>
+            <p>Opening theme  :  "My Life Is Going On" by Cecilia Krull</p>
+            <p>Original language  :   Spanish</p>
+        </div>
+      </div>
+      <div class="text-white flex flex-col space-y-3">
+        <p class="text-[30px] font-semibold underline decoration-solid">Comments</p>
+        <div>
+          <input type="text" class="w-[700px] h-[100px] placeholder opacity-[0.5]" value="Write Something...">
+        </div>
+        <div class="w-[700px] h-[250px] bg-gray-200 text-black rounded-md px-5">
+          <div class="flex items-center space-x-3">
+          <ion-icon name="person-circle-outline" class="text-2xl"></ion-icon>
+          <span class="mr-4 font-bold">Mark Albert 123</span>
+          <p class="text-[10px] opacity-[0.5] ">12min ago</p>
+        </div>
+          <p>THE BEST SHOW I'VE EVER SEEN! 😍❤ EVERYONE MUST WATCH THIS!<br>
+            I won't give the spoilers! But this show consists of the robbers whoare professor in robberies , Mastermind El Professor who leads
+            the whole gang in various ways to perform their duties and to accomplish their plan , As Rio , He is the professional hacker works 
+           on the communication which makes them know what is going on outside , Keeps all the systems down  , Tokyo  , She is the most
+           powerful character,  Nairobi , She's the strong women ...MORE</p>
+           <div class="float-left">
+            <button class="bg-blue-800 text-black rounded-2xl py-1 px-6 mr-7">
+              <ion-icon name="thumbs-up"></ion-icon>
+              <span>Helpful</span></button>
+           </div>
+           <button class="bg-blue-800 text-black rounded-2xl py-1 px-6">
+            <ion-icon name="thumbs-down"></ion-icon>
+            <span>Unhelpful</span></button>
+        </div>
+      </div>
+      <div class="w-[700px] h-[250px] bg-gray-200 text-black mt-3 rounded-md px-5">
+        <div class="flex items-center space-x-3">
+          <ion-icon name="person-circle-outline" class="text-2xl"></ion-icon>
+        <span class="mr-4 font-bold">Mark Albert 123</span>
+        <p class="text-[10px] opacity-[0.5] ">12min ago</p>
+      </div>
+        <p>THE BEST SHOW I'VE EVER SEEN! 😍❤ EVERYONE MUST WATCH THIS!<br>
+          I won't give the spoilers! But this show consists of the robbers whoare professor in robberies , Mastermind El Professor who leads
+          the whole gang in various ways to perform their duties and to accomplish their plan , As Rio , He is the professional hacker works 
+         on the communication which makes them know what is going on outside , Keeps all the systems down  , Tokyo  , She is the most
+         powerful character,  Nairobi , She's the strong women ...MORE</p>
+         <div class="float-left">
+          <button class="bg-blue-800 text-black rounded-2xl py-1 px-6 mr-7">
+            <ion-icon name="thumbs-up"></ion-icon>
+            <span>Helpful</span></button>
+         </div>
+         <button class="bg-blue-800 text-black rounded-2xl py-1 px-6">
+          <ion-icon name="thumbs-down"></ion-icon>
+          <span>Unhelpful</span></button>
+      </div>   
+    </section>
+    <ion-icon name="arrow-back" class="text-4xl text-green-600" id="back1"></ion-icon>
+  </div>
+    <!--Popular Movies-->
+    <div class="hidden movies">
+    <nav class="container mx-auto w-full text-white bg-gray-600 px-2 py-1 flex items-center justify-start sm:justify-between space-x-28">
+      <div class="flex items-center ">
+        <ion-icon name="logo-mastodon" class="text-4xl"></ion-icon>
+        <span class="text-[30px]">Name</span>
+        </div>
+        <ion-icon id="menuBtn"
+          name="menu-outline"
+          class="flex self-end md:hidden text-4xl"
+        ></ion-icon>
+        <div class="flex items-center">
+          <ul class="hidden md:flex space-x-4 items-center">
+            <li class="hover:underline decoration-solid hover:text-green-500 transition-all delay-75 cursor-pointer" id="home">Home</li>
+            <li class="hover:underline decoration-solid hover:text-green-500 transition-all delay-75 cursor-pointer" id="country1">Country</li>
+            <li class="hover:underline decoration-solid hover:text-green-500 transition-all delay-75 cursor-pointer" id="movies1">Movies</li>
+            <li class="hover:underline decoration-solid hover:text-green-500 transition-all delay-75 cursor-pointer" id="shows1">TV Shows</li>
+            <li class="hover:underline decoration-solid hover:text-green-500 transition-all delay-75 cursor-pointer" id="IMDB1">Top IMDB</li>
+            <li class="hover:underline decoration-solid hover:text-green-500 transition-all delay-75 cursor-pointer" id="andoid1">Andoid App</li>
+            <li>
+              <button id="login2" class="bg-green-600 hover:bg-gray-500 cursor-pointer rounded-lg px-3 py-1">Log in</button>
+            </li>
+              <button
+                class="px-10 py-2 bg-slate-800 flex items-center space-x-2 rounded-2xl"
+              >
+                <ion-icon name="search-outline"></ion-icon>Enter Keywords...
+              </button>
+            </li>
+          </ul>
+        </div>
+    </nav>
+    <section class="container w-full bg-slate-900 mx-auto text-white px-2 py-1 flex flex-col space-y-4">
+      <div class="flex space-x-1 justify-start items-center">
+      <div class="w-2 h-10 bg-green-600 "></div>
+      <span class="text-[34px]">Popular Movies</span>
+    </div>  
+    <div class="flex justify-center items-center space-x-2">
+      <div class="w-6 h-6 bg-gray-800 flex items-center justify-center "><ion-icon name="chevron-back-outline"></ion-icon></div>
+      <div class="w-6 h-6 bg-green-600 flex items-center justify-center">1</div>
+      <div class="w-6 h-6 bg-gray-800 flex items-center justify-center">2</div>
+      <div class="w-6 h-6 bg-gray-800 flex items-center justify-center ">3</div>
+      <div class="w-6 h-6 bg-gray-800 flex items-center justify-center "></div>
+    </div>
+    <div>
+      <div class="flex flex-row justify-between items-center space-x-3 ">
+        <div class="bg-black w-52 h-64 rounded-lg relative">
+          <img src="../movies/film.jpg" alt="" class="w-60 h-[210px] rounded-t-lg" />
+          <div
+            class="flex justify-between items-center absolute bottom-[20px] text-white"
+          >
+            <p>Name1</p>
+            <p>2023</p>
+          </div>
+        </div>
+        <div class="bg-black w-52 h-64 rounded-lg relative">
+          <img src="../movies/judy.jpg" alt="" class="w-60 h-[210px] rounded-t-lg" />
+          <div
+            class="flex justify-between items-center absolute bottom-[20px] text-white"
+          >
+            <p>Name1</p>
+            <p>2023</p>
+          </div>
+        </div>
+        <div class="bg-black w-52 h-64 rounded-lg relative">
+          <img src="../movies/spider.jpg" alt="" class="w-60 h-[210px] rounded-t-lg" />
+          <div
+            class="flex justify-between items-center absolute bottom-[20px] text-white"
+          >
+            <p>Name1</p>
+            <p>2023</p>
+          </div>
+        </div>
+        <div class="bg-black w-52 h-64 rounded-lg relative">
+          <img src="../movies/tim-oun-uXCy7ixz30w-unsplash.jpg" alt="" class="w-60 h-[210px] rounded-t-lg" />
+          <div class="flex justify-between absolute bottom-[20px] text-white">
+            <p>Name1</p>
+            <p>2023</p>
+          </div>
+        </div>
+        <div class="bg-black w-52 h-64 rounded-lg relative">
+          <img src="../movies/carol-kennedy-1rojtQgU0p4-unsplash.jpg" alt="" class="w-60 h-[210px] rounded-t-lg" />
+          <div
+            class="flex justify-between items-center absolute bottom-[20px] text-white"
+          >
+            <p>Name1</p>
+            <p>2023</p>
+          </div>
+        </div>
+        <div class="bg-black w-52 h-64 rounded-lg relative">
+          <img src="../movies/darryl-brian-rgPRoZt8yg4-unsplash.jpg" alt="" class="w-60 h-[210px] rounded-t-lg" />
+          <div
+            class="flex justify-between items-center absolute bottom-[20px] text-white"
+          >
+            <p>Name1</p>
+            <p>2023</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--Start Nextrow-->
+    <div class="flex flex-row justify-between items-center space-x-3 mt-3">
+      <div class="bg-black w-52 h-64 rounded-lg relative">
+        <img src="../movies/yannick-van-der-schot-p4RbIDJAfZg-unsplash.jpg" alt="" class="w-60 h-[210px] rounded-t-lg" />
+        <div
+          class="flex justify-between items-center absolute bottom-[20px] text-white"
+        >
+          <p>Name1</p>
+          <p>2023</p>
+        </div>
+      </div>
+      <div class="bg-black w-52 h-64 rounded-lg relative">
+        <img src="../movies/dev-d2Py_uhXJQo-unsplash.jpg" alt="" class="w-60 h-[210px] rounded-t-lg" />
+        <div
+          class="flex justify-between items-center absolute bottom-[20px] text-white"
+        >
+          <p>Name1</p>
+          <p>2023</p>
+        </div>
+      </div>
+      <div class="bg-black w-52 h-64 rounded-lg relative">
+        <img src="../movies/erik-mclean-Np_8Kt_QHZU-unsplash.jpg" alt="" class="w-60 h-[210px] rounded-t-lg" />
+        <div
+          class="flex justify-between items-center absolute bottom-[20px] text-white"
+        >
+          <p>Name1</p>
+          <p>2023</p>
+        </div>
+      </div>
+      <div class="bg-black w-52 h-64 rounded-lg relative">
+        <img src="../movies/tim-oun-uXCy7ixz30w-unsplash.jpg" alt="" class="w-60 h-[210px] rounded-t-lg" />
+        <div
+          class="flex justify-between items-center absolute bottom-[20px] text-white"
+        >
+          <p>Name1</p>
+          <p>2023</p>
+        </div>
+      </div>
+      <div class="bg-black w-52 h-64 rounded-lg relative">
+        <img src="../movies/film.jpg" alt="" class="w-60 h-[210px] rounded-t-lg " />
+        <div
+          class="flex justify-between items-center absolute bottom-[20px] text-white"
+        >
+          <p>Name1</p>
+          <p>2023</p>
+        </div>
+      </div>
+      <div class="bg-black w-52 h-64 rounded-lg relative">
+        <img src="../movies/collection.jpg" alt="" class="w-60 h-[210px] rounded-t-lg" />
+        <div
+          class="flex justify-between items-center absolute bottom-[20px] text-white"
+        >
+          <p>Name1</p>
+          <p>2023</p>
+        </div>
+      </div>
+    </div>
+    <!--Start Nextrow-->
+    <div class="flex flex-row justify-between items-center space-x-3">
+      <div class="bg-black w-52 h-64 rounded-lg relative">
+        <img src="../movies/film.jpg" alt="" class="w-60 h-[210px] rounded-t-lg" />
+        <div
+          class="flex justify-between items-center absolute bottom-[20px] text-white"
+        >
+          <p>Name1</p>
+          <p>2023</p>
+        </div>
+      </div>
+      <div class="bg-black w-52 h-64 rounded-lg relative">
+        <img src="../movies/judy.jpg" alt="" class="w-60 h-[210px] rounded-t-lg" />
+        <div
+          class="flex justify-between items-center absolute bottom-[20px] text-white"
+        >
+          <p>Name1</p>
+          <p>2023</p>
+        </div>
+      </div>
+      <div class="bg-black w-52 h-64 rounded-lg relative">
+        <img src="../movies/spider.jpg" alt="" class="w-60 h-[210px] rounded-t-lg" />
+        <div
+          class="flex justify-between items-center absolute bottom-[20px] text-white"
+        >
+          <p>Name1</p>
+          <p>2023</p>
+        </div>
+      </div>
+      <div class="bg-black w-52 h-64 rounded-lg relative">
+        <img src="../movies/tim-oun-uXCy7ixz30w-unsplash.jpg" alt="" class="w-60 h-[210px] rounded-t-lg" />
+        <div class="flex justify-between absolute bottom-[20px] text-white">
+          <p>Name1</p>
+          <p>2023</p>
+        </div>
+      </div>
+      <div class="bg-black w-52 h-64 rounded-lg relative">
+        <img src="../movies/carol-kennedy-1rojtQgU0p4-unsplash.jpg" alt="" class="w-60 h-[210px] rounded-t-lg" />
+        <div
+          class="flex justify-between items-center absolute bottom-[20px] text-white"
+        >
+          <p>Name1</p>
+          <p>2023</p>
+        </div>
+      </div>
+      <div class="bg-black w-52 h-64 rounded-lg relative">
+        <img src="../movies/darryl-brian-rgPRoZt8yg4-unsplash.jpg" alt="" class="w-60 h-[210px] rounded-t-lg" />
+        <div
+          class="flex justify-between items-center absolute bottom-[20px] text-white"
+        >
+          <p>Name1</p>
+          <p>2023</p>
+        </div>
+      </div>
+    </div>
+  
+  <!--Start Nextrow-->
+  <div class="flex flex-row justify-between items-center space-x-3 mt-3 ">
+    <div class="bg-black w-52 h-64 rounded-lg relative">
+      <img src="../movies/yannick-van-der-schot-p4RbIDJAfZg-unsplash.jpg" alt="" class="w-60 h-[210px] rounded-t-lg" />
+      <div
+        class="flex justify-between items-center absolute bottom-[20px] text-white"
+      >
+        <p>Name1</p>
+        <p>2023</p>
+      </div>
+    </div>
+    <div class="bg-black w-52 h-64 rounded-lg relative">
+      <img src="../movies/dev-d2Py_uhXJQo-unsplash.jpg" alt="" class="w-60 h-[210px] rounded-t-lg" />
+      <div
+        class="flex justify-between items-center absolute bottom-[20px] text-white"
+      >
+        <p>Name1</p>
+        <p>2023</p>
+      </div>
+    </div>
+    <div class="bg-black w-52 h-64 rounded-lg relative">
+      <img src="../movies/erik-mclean-Np_8Kt_QHZU-unsplash.jpg" alt="" class="w-60 h-[210px] rounded-t-lg" />
+      <div
+        class="flex justify-between items-center absolute bottom-[20px] text-white"
+      >
+        <p>Name1</p>
+        <p>2023</p>
+      </div>
+    </div>
+    <div class="bg-black w-52 h-64 rounded-lg relative">
+      <img src="../movies/tim-oun-uXCy7ixz30w-unsplash.jpg" alt="" class="w-60 h-[210px] rounded-t-lg" />
+      <div
+        class="flex justify-between items-center absolute bottom-[20px] text-white"
+      >
+        <p>Name1</p>
+        <p>2023</p>
+      </div>
+    </div>
+    <div class="bg-black w-52 h-64 rounded-lg relative">
+      <img src="../movies/film.jpg" alt="" class="w-60 h-[210px] rounded-t-lg " />
+      <div
+        class="flex justify-between items-center absolute bottom-[20px] text-white"
+      >
+        <p>Name1</p>
+        <p>2023</p>
+      </div>
+    </div>
+    <div class="bg-black w-52 h-64 rounded-lg relative">
+      <img src="../movies/collection.jpg" alt="" class="w-60 h-[210px] rounded-t-lg" />
+      <div
+        class="flex justify-between items-center absolute bottom-[20px] text-white"
+      >
+        <p>Name1</p>
+        <p>2023</p>
+      </div>
+    </div>
+  </div>
+  <!--Start Nextrow-->
+  <div class="flex flex-row justify-between items-center space-x-3 mt-3">
+    <div class="bg-black w-52 h-64 rounded-lg relative">
+      <img src="../movies/yannick-van-der-schot-p4RbIDJAfZg-unsplash.jpg" alt="" class="w-60 h-[210px] rounded-t-lg" />
+      <div
+        class="flex justify-between items-center absolute bottom-[20px] text-white"
+      >
+        <p>Name1</p>
+        <p>2023</p>
+      </div>
+    </div>
+    <div class="bg-black w-52 h-64 rounded-lg relative">
+      <img src="../movies/dev-d2Py_uhXJQo-unsplash.jpg" alt="" class="w-60 h-[210px] rounded-t-lg" />
+      <div
+        class="flex justify-between items-center absolute bottom-[20px] text-white"
+      >
+        <p>Name1</p>
+        <p>2023</p>
+      </div>
+    </div>
+    <div class="bg-black w-52 h-64 rounded-lg relative">
+      <img src="../movies/erik-mclean-Np_8Kt_QHZU-unsplash.jpg" alt="" class="w-60 h-[210px] rounded-t-lg" />
+      <div
+        class="flex justify-between items-center absolute bottom-[20px] text-white"
+      >
+        <p>Name1</p>
+        <p>2023</p>
+      </div>
+    </div>
+    <div class="bg-black w-52 h-64 rounded-lg relative">
+      <img src="../movies/tim-oun-uXCy7ixz30w-unsplash.jpg" alt="" class="w-60 h-[210px] rounded-t-lg" />
+      <div
+        class="flex justify-between items-center absolute bottom-[20px] text-white"
+      >
+        <p>Name1</p>
+        <p>2023</p>
+      </div>
+    </div>
+    <div class="bg-black w-52 h-64 rounded-lg relative">
+      <img src="../movies/film.jpg" alt="" class="w-60 h-[210px] rounded-t-lg " />
+      <div
+        class="flex justify-between items-center absolute bottom-[20px] text-white"
+      >
+        <p>Name1</p>
+        <p>2023</p>
+      </div>
+    </div>
+    <div class="bg-black w-52 h-64 rounded-lg relative">
+      <img src="../movies/collection.jpg" alt="" class="w-60 h-[210px] rounded-t-lg" />
+      <div
+        class="flex justify-between items-center absolute bottom-[20px] text-white"
+      >
+        <p>Name1</p>
+        <p>2023</p>
+      </div>
+    </div>
+  </div>
+  <div class="flex justify-center items-center space-x-2">
+    <div class="w-6 h-6 bg-gray-800 flex items-center justify-center "><ion-icon name="chevron-back-outline"></ion-icon></div>
+    <div class="w-6 h-6 bg-green-600 flex items-center justify-center">1</div>
+    <div class="w-6 h-6 bg-gray-800 flex items-center justify-center">2</div>
+    <div class="w-6 h-6 bg-gray-800 flex items-center justify-center ">3</div>
+    <div class="w-6 h-6 bg-gray-800 flex items-center justify-center "></div>
+  </div>
+    </section>
+    <footer class="bg-gray-900">
+      <div class="mx-auto w-full max-w-screen-xl">
+        <div class="grid grid-cols-3 gap-8 px-4 py-6 lg:py-8 md:grid-cols-5 md:gap-4">
+          <div>
+              <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Links</h2>
+              <ul class="text-gray-500 dark:text-gray-400 font-medium">
+                  <li class="mb-4">
+                      <a href="#" class=" hover:underline">Movies</a>
+                  </li>
+                  <li class="mb-4">
+                      <a href="#" class="hover:underline">TV shows</a>
+                  </li>
+                  <li class="mb-4">
+                      <a href="#" class="hover:underline">Top IMDB</a>
+                  </li>
+              </ul>
+          </div>
+          <div>
+              
+              <ul class="text-gray-500 dark:text-gray-400 font-medium">
+                  <li class="mb-4">
+                      <a href="#" class="hover:underline">Action Movies</a>
+                  </li>
+                  <li class="mb-4">
+                      <a href="#" class="hover:underline">Horror Movies</a>
+                  </li>
+                  <li class="mb-4">
+                      <a href="#" class="hover:underline">Sci-fic Movies</a>
+                  </li>
+                  <li class="mb-4">
+                      <a href="#" class="hover:underline">Thriller Movies</a>
+                  </li>
+              </ul>
+          </div>
+          <div>
+              
+              <ul class="text-gray-500 dark:text-gray-400 font-medium">
+                  <li class="mb-4">
+                      <a href="#" class="hover:underline">Android App</a>
+                  </li>
+                  <li class="mb-4">
+                      <a href="#" class="hover:underline">Contact</a>
+                  </li>
+                  <li class="mb-4">
+                      <a href="#" class="hover:underline">Term of service</a>
+                  </li>
+                  <li class="mb-4">
+                    <a href="#" class="hover:underline"><li class="mb-4">
+                      <a href="#" class="hover:underline">Sitemap</a>
+                  </li></a>
+                </li>
+              </ul>
+          </div>
+          <div>
+              <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">About Us</h2>
+              <ul class="text-gray-500 dark:text-gray-400 font-medium">
+                  <li class="mb-4">
+                      <a href="#" class="w-full">This is free tv shows streaming website with zero ads, it allows you watch tv shows online, watch tv shows online free in<br>
+                        high quality for free. You can also download full tv shows and watch it later if you want.<br>
+                        This site does not store any files on our server, we only linked to the media which is hosted on 3rd party services.
+                      </a>
+                  </li>
+              </ul>
+              <div class="text-green-500 flex flex-row space-x-4 items-center">
+                <p class="text-[8px] xl:text-[15px]">High quality</p>
+                <p class="text-[8px] xl:text-[15px]">Free forever</p>
+                <p class="text-[8px] xl:text-[15px]">Fast load</p>
+                <p class="text-[8px] xl:text-[15px]">Multi subtitles</p>
+              </div>
+          </div>
+          <div>
+            <img src="../movies/thomas-kinto-6MsMKWzJWKc-unsplash.jpg" alt="" class="w-[700px] hidden md:block">
+          </div>
+      </div>
+    </div>
+  </div>
+  <!--Popular Shows-->
+  <div class="shows hidden">
+    <nav class="container mx-auto w-full text-white bg-gray-600 px-2 py-1 flex items-center justify-start space-x-28">
+      <div class="flex items-center ">
+        <ion-icon name="logo-mastodon" class="text-4xl"></ion-icon>
+        <span class="text-[30px]">Name</span>
+        </div>
+        <ion-icon id="menuBtn"
+          name="menu-outline"
+          class="flex self-end md:hidden text-4xl"
+        ></ion-icon>
+        <div class="flex items-center">
+          <ul class="hidden md:flex space-x-4 items-center">
+            <li class="hover:underline decoration-solid hover:text-green-500 transition-all delay-75 cursor-pointer" id="home2">Home</li>
+            <li class="hover:underline decoration-solid hover:text-green-500 transition-all delay-75 cursor-pointer" id="country2" >Country</li>
+            <li class="hover:underline decoration-solid hover:text-green-500 transition-all delay-75 cursor-pointer" id="movies2">Movies</li>
+            <li class="hover:underline decoration-solid hover:text-green-500 transition-all delay-75 cursor-pointer" id="shows2">TV Shows</li>
+            <li class="hover:underline decoration-solid hover:text-green-500 transition-all delay-75 cursor-pointer" id="IMDB2">Top IMDB</li>
+            <li class="hover:underline decoration-solid hover:text-green-500 transition-all delay-75 cursor-pointer" id="andoid2">Andoid App</li>
+            <li>
+              <button id="login3" class="bg-green-600 hover:bg-gray-500 cursor-pointer rounded-lg px-3 py-1">Log in</button>
+            </li>
+              <button
+                class="px-10 py-2 bg-slate-800 flex items-center space-x-2 rounded-2xl"
+              >
+                <ion-icon name="search-outline"></ion-icon>Enter Keywords...
+              </button>
+            </li>
+          </ul>
+        </div>
+    </nav>
+    <section class="container w-full bg-slate-900 mx-auto text-white px-2 py-1 flex flex-col space-y-4">
+      <div class="flex space-x-1 justify-start items-center">
+      <div class="w-2 h-10 bg-green-600 "></div>
+      <span class="text-[34px]">Popular Shows</span>
+    </div>  
+    <div class="flex justify-center items-center space-x-2">
+      <div class="w-6 h-6 bg-gray-800 flex items-center justify-center "><ion-icon name="chevron-back-outline"></ion-icon></div>
+      <div class="w-6 h-6 bg-green-600 flex items-center justify-center">1</div>
+      <div class="w-6 h-6 bg-gray-800 flex items-center justify-center">2</div>
+      <div class="w-6 h-6 bg-gray-800 flex items-center justify-center ">3</div>
+      <div class="w-6 h-6 bg-gray-800 flex items-center justify-center "></div>
+    </div>
+    <div>
+      <div class="flex flex-row justify-between items-center space-x-3">
+        <div class="bg-black w-52 h-64 rounded-lg relative">
+          <img src="../movies/film.jpg" alt="" class="w-60 h-[210px] rounded-t-lg" />
+          <div
+            class="flex justify-between items-center absolute bottom-[20px] text-white"
+          >
+            <p>Name1</p>
+            <p>2023</p>
+          </div>
+        </div>
+        <div class="bg-black w-52 h-64 rounded-lg relative">
+          <img src="../movies/judy.jpg" alt="" class="w-60 h-[210px] rounded-t-lg" />
+          <div
+            class="flex justify-between items-center absolute bottom-[20px] text-white"
+          >
+            <p>Name1</p>
+            <p>2023</p>
+          </div>
+        </div>
+        <div class="bg-black w-52 h-64 rounded-lg relative">
+          <img src="../movies/spider.jpg" alt="" class="w-60 h-[210px] rounded-t-lg" />
+          <div
+            class="flex justify-between items-center absolute bottom-[20px] text-white"
+          >
+            <p>Name1</p>
+            <p>2023</p>
+          </div>
+        </div>
+        <div class="bg-black w-52 h-64 rounded-lg relative">
+          <img src="../movies/tim-oun-uXCy7ixz30w-unsplash.jpg" alt="" class="w-60 h-[210px] rounded-t-lg" />
+          <div class="flex justify-between absolute bottom-[20px] text-white">
+            <p>Name1</p>
+            <p>2023</p>
+          </div>
+        </div>
+        <div class="bg-black w-52 h-64 rounded-lg relative">
+          <img src="../movies/carol-kennedy-1rojtQgU0p4-unsplash.jpg" alt="" class="w-60 h-[210px] rounded-t-lg" />
+          <div
+            class="flex justify-between items-center absolute bottom-[20px] text-white"
+          >
+            <p>Name1</p>
+            <p>2023</p>
+          </div>
+        </div>
+        <div class="bg-black w-52 h-64 rounded-lg relative">
+          <img src="../movies/darryl-brian-rgPRoZt8yg4-unsplash.jpg" alt="" class="w-60 h-[210px] rounded-t-lg" />
+          <div
+            class="flex justify-between items-center absolute bottom-[20px] text-white"
+          >
+            <p>Name1</p>
+            <p>2023</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--Start Nextrow-->
+    <div class="flex flex-row justify-between items-center space-x-3 mt-3">
+      <div class="bg-black w-52 h-64 rounded-lg relative">
+        <img src="../movies/yannick-van-der-schot-p4RbIDJAfZg-unsplash.jpg" alt="" class="w-60 h-[210px] rounded-t-lg" />
+        <div
+          class="flex justify-between items-center absolute bottom-[20px] text-white"
+        >
+          <p>Name1</p>
+          <p>2023</p>
+        </div>
+      </div>
+      <div class="bg-black w-52 h-64 rounded-lg relative">
+        <img src="../movies/dev-d2Py_uhXJQo-unsplash.jpg" alt="" class="w-60 h-[210px] rounded-t-lg" />
+        <div
+          class="flex justify-between items-center absolute bottom-[20px] text-white"
+        >
+          <p>Name1</p>
+          <p>2023</p>
+        </div>
+      </div>
+      <div class="bg-black w-52 h-64 rounded-lg relative">
+        <img src="../movies/erik-mclean-Np_8Kt_QHZU-unsplash.jpg" alt="" class="w-60 h-[210px] rounded-t-lg" />
+        <div
+          class="flex justify-between items-center absolute bottom-[20px] text-white"
+        >
+          <p>Name1</p>
+          <p>2023</p>
+        </div>
+      </div>
+      <div class="bg-black w-52 h-64 rounded-lg relative">
+        <img src="../movies/tim-oun-uXCy7ixz30w-unsplash.jpg" alt="" class="w-60 h-[210px] rounded-t-lg" />
+        <div
+          class="flex justify-between items-center absolute bottom-[20px] text-white"
+        >
+          <p>Name1</p>
+          <p>2023</p>
+        </div>
+      </div>
+      <div class="bg-black w-52 h-64 rounded-lg relative">
+        <img src="../movies/film.jpg" alt="" class="w-60 h-[210px] rounded-t-lg " />
+        <div
+          class="flex justify-between items-center absolute bottom-[20px] text-white"
+        >
+          <p>Name1</p>
+          <p>2023</p>
+        </div>
+      </div>
+      <div class="bg-black w-52 h-64 rounded-lg relative">
+        <img src="../movies/collection.jpg" alt="" class="w-60 h-[210px] rounded-t-lg" />
+        <div
+          class="flex justify-between items-center absolute bottom-[20px] text-white"
+        >
+          <p>Name1</p>
+          <p>2023</p>
+        </div>
+      </div>
+    </div>
+    <!--Start Nextrow-->
+    <div class="flex flex-row justify-between items-center space-x-3 ">
+      <div class="bg-black w-52 h-64 rounded-lg relative">
+        <img src="../movies/film.jpg" alt="" class="w-60 h-[210px] rounded-t-lg" />
+        <div
+          class="flex justify-between items-center absolute bottom-[20px] text-white"
+        >
+          <p>Name1</p>
+          <p>2023</p>
+        </div>
+      </div>
+      <div class="bg-black w-52 h-64 rounded-lg relative">
+        <img src="../movies/judy.jpg" alt="" class="w-60 h-[210px] rounded-t-lg" />
+        <div
+          class="flex justify-between items-center absolute bottom-[20px] text-white"
+        >
+          <p>Name1</p>
+          <p>2023</p>
+        </div>
+      </div>
+      <div class="bg-black w-52 h-64 rounded-lg relative">
+        <img src="../movies/spider.jpg" alt="" class="w-60 h-[210px] rounded-t-lg" />
+        <div
+          class="flex justify-between items-center absolute bottom-[20px] text-white"
+        >
+          <p>Name1</p>
+          <p>2023</p>
+        </div>
+      </div>
+      <div class="bg-black w-52 h-64 rounded-lg relative">
+        <img src="../movies/tim-oun-uXCy7ixz30w-unsplash.jpg" alt="" class="w-60 h-[210px] rounded-t-lg" />
+        <div class="flex justify-between absolute bottom-[20px] text-white">
+          <p>Name1</p>
+          <p>2023</p>
+        </div>
+      </div>
+      <div class="bg-black w-52 h-64 rounded-lg relative">
+        <img src="../movies/carol-kennedy-1rojtQgU0p4-unsplash.jpg" alt="" class="w-60 h-[210px] rounded-t-lg" />
+        <div
+          class="flex justify-between items-center absolute bottom-[20px] text-white"
+        >
+          <p>Name1</p>
+          <p>2023</p>
+        </div>
+      </div>
+      <div class="bg-black w-52 h-64 rounded-lg relative">
+        <img src="../movies/darryl-brian-rgPRoZt8yg4-unsplash.jpg" alt="" class="w-60 h-[210px] rounded-t-lg" />
+        <div
+          class="flex justify-between items-center absolute bottom-[20px] text-white"
+        >
+          <p>Name1</p>
+          <p>2023</p>
+        </div>
+      </div>
+    </div>
+  
+  <!--Start Nextrow-->
+  <div class="flex flex-row justify-between items-center space-x-3 mt-3 ">
+    <div class="bg-black w-52 h-64 rounded-lg relative">
+      <img src="../movies/yannick-van-der-schot-p4RbIDJAfZg-unsplash.jpg" alt="" class="w-60 h-[210px] rounded-t-lg" />
+      <div
+        class="flex justify-between items-center absolute bottom-[20px] text-white"
+      >
+        <p>Name1</p>
+        <p>2023</p>
+      </div>
+    </div>
+    <div class="bg-black w-52 h-64 rounded-lg relative">
+      <img src="../movies/dev-d2Py_uhXJQo-unsplash.jpg" alt="" class="w-60 h-[210px] rounded-t-lg" />
+      <div
+        class="flex justify-between items-center absolute bottom-[20px] text-white"
+      >
+        <p>Name1</p>
+        <p>2023</p>
+      </div>
+    </div>
+    <div class="bg-black w-52 h-64 rounded-lg relative">
+      <img src="../movies/erik-mclean-Np_8Kt_QHZU-unsplash.jpg" alt="" class="w-60 h-[210px] rounded-t-lg" />
+      <div
+        class="flex justify-between items-center absolute bottom-[20px] text-white"
+      >
+        <p>Name1</p>
+        <p>2023</p>
+      </div>
+    </div>
+    <div class="bg-black w-52 h-64 rounded-lg relative">
+      <img src="../movies/tim-oun-uXCy7ixz30w-unsplash.jpg" alt="" class="w-60 h-[210px] rounded-t-lg" />
+      <div
+        class="flex justify-between items-center absolute bottom-[20px] text-white"
+      >
+        <p>Name1</p>
+        <p>2023</p>
+      </div>
+    </div>
+    <div class="bg-black w-52 h-64 rounded-lg relative">
+      <img src="../movies/film.jpg" alt="" class="w-60 h-[210px] rounded-t-lg " />
+      <div
+        class="flex justify-between items-center absolute bottom-[20px] text-white"
+      >
+        <p>Name1</p>
+        <p>2023</p>
+      </div>
+    </div>
+    <div class="bg-black w-52 h-64 rounded-lg relative">
+      <img src="../movies/collection.jpg" alt="" class="w-60 h-[210px] rounded-t-lg" />
+      <div
+        class="flex justify-between items-center absolute bottom-[20px] text-white"
+      >
+        <p>Name1</p>
+        <p>2023</p>
+      </div>
+    </div>
+  </div>
+  <!--Start Nextrow-->
+  <div class="flex flex-row justify-between items-center space-x-3 mt-3">
+    <div class="bg-black w-52 h-64 rounded-lg relative">
+      <img src="../movies/yannick-van-der-schot-p4RbIDJAfZg-unsplash.jpg" alt="" class="w-60 h-[210px] rounded-t-lg" />
+      <div
+        class="flex justify-between items-center absolute bottom-[20px] text-white"
+      >
+        <p>Name1</p>
+        <p>2023</p>
+      </div>
+    </div>
+    <div class="bg-black w-52 h-64 rounded-lg relative">
+      <img src="../movies/dev-d2Py_uhXJQo-unsplash.jpg" alt="" class="w-60 h-[210px] rounded-t-lg" />
+      <div
+        class="flex justify-between items-center absolute bottom-[20px] text-white"
+      >
+        <p>Name1</p>
+        <p>2023</p>
+      </div>
+    </div>
+    <div class="bg-black w-52 h-64 rounded-lg relative">
+      <img src="../movies/erik-mclean-Np_8Kt_QHZU-unsplash.jpg" alt="" class="w-60 h-[210px] rounded-t-lg" />
+      <div
+        class="flex justify-between items-center absolute bottom-[20px] text-white"
+      >
+        <p>Name1</p>
+        <p>2023</p>
+      </div>
+    </div>
+    <div class="bg-black w-52 h-64 rounded-lg relative">
+      <img src="../movies/tim-oun-uXCy7ixz30w-unsplash.jpg" alt="" class="w-60 h-[210px] rounded-t-lg" />
+      <div
+        class="flex justify-between items-center absolute bottom-[20px] text-white"
+      >
+        <p>Name1</p>
+        <p>2023</p>
+      </div>
+    </div>
+    <div class="bg-black w-52 h-64 rounded-lg relative">
+      <img src="../movies/film.jpg" alt="" class="w-60 h-[210px] rounded-t-lg " />
+      <div
+        class="flex justify-between items-center absolute bottom-[20px] text-white"
+      >
+        <p>Name1</p>
+        <p>2023</p>
+      </div>
+    </div>
+    <div class="bg-black w-52 h-64 rounded-lg relative">
+      <img src="../movies/collection.jpg" alt="" class="w-60 h-[210px] rounded-t-lg" />
+      <div
+        class="flex justify-between items-center absolute bottom-[20px] text-white"
+      >
+        <p>Name1</p>
+        <p>2023</p>
+      </div>
+    </div>
+  </div>
+  <div class="flex justify-center items-center space-x-2">
+    <div class="w-6 h-6 bg-gray-800 flex items-center justify-center "><ion-icon name="chevron-back-outline"></ion-icon></div>
+    <div class="w-6 h-6 bg-green-600 flex items-center justify-center">1</div>
+    <div class="w-6 h-6 bg-gray-800 flex items-center justify-center">2</div>
+    <div class="w-6 h-6 bg-gray-800 flex items-center justify-center ">3</div>
+    <div class="w-6 h-6 bg-gray-800 flex items-center justify-center "></div>
+  </div>
+    </section>
+    <footer class="bg-gray-900">
+      <div class="mx-auto w-full max-w-screen-xl">
+        <div class="grid grid-cols-3 gap-8 px-4 py-6 lg:py-8 md:grid-cols-5 md:gap-4">
+          <div>
+              <h2 class="mb-6 text-[20px] font-semibold text-white">Links</h2>
+              <ul class="text-gray-500 dark:text-gray-400 font-medium">
+                  <li class="mb-4">
+                      <a href="#" class=" hover:underline">Movies</a>
+                  </li>
+                  <li class="mb-4">
+                      <a href="#" class="hover:underline">TV shows</a>
+                  </li>
+                  <li class="mb-4">
+                      <a href="#" class="hover:underline">Top IMDB</a>
+                  </li>
+              </ul>
+          </div>
+          <div>
+              
+              <ul class="text-gray-500 dark:text-gray-400 font-medium">
+                  <li class="mb-4">
+                      <a href="#" class="hover:underline">Action Movies</a>
+                  </li>
+                  <li class="mb-4">
+                      <a href="#" class="hover:underline">Horror Movies</a>
+                  </li>
+                  <li class="mb-4">
+                      <a href="#" class="hover:underline">Sci-fic Movies</a>
+                  </li>
+                  <li class="mb-4">
+                      <a href="#" class="hover:underline">Thriller Movies</a>
+                  </li>
+              </ul>
+          </div>
+          <div>
+              
+              <ul class="text-gray-500 dark:text-gray-400 font-medium">
+                  <li class="mb-4">
+                      <a href="#" class="hover:underline">Android App</a>
+                  </li>
+                  <li class="mb-4">
+                      <a href="#" class="hover:underline">Contact</a>
+                  </li>
+                  <li class="mb-4">
+                      <a href="#" class="hover:underline">Term of service</a>
+                  </li>
+                  <li class="mb-4">
+                    <a href="#" class="hover:underline"><li class="mb-4">
+                      <a href="#" class="hover:underline">Sitemap</a>
+                  </li></a>
+                </li>
+              </ul>
+          </div>
+          <div>
+              <h2 class="mb-6 text-[20px] font-semibold text-white">About Us</h2>
+              <ul class="text-gray-500 dark:text-gray-400 font-medium">
+                  <li class="mb-4">
+                      <a href="#" class="w-full">This is free tv shows streaming website with zero ads, it allows you watch tv shows online, watch tv shows online free in<br>
+                        high quality for free. You can also download full tv shows and watch it later if you want.<br>
+                        This site does not store any files on our server, we only linked to the media which is hosted on 3rd party services.
+                      </a>
+                  </li>
+              </ul>
+              <div class="text-green-500 flex flex-row space-x-4 items-center">
+                <p class="text-[8px] xl:text-[15px]">High quality</p>
+                <p class="text-[8px] xl:text-[15px]">Free forever</p>
+                <p class="text-[8px] xl:text-[15px]">Fast load</p>
+                <p class="text-[8px] xl:text-[15px]">Multi subtitles</p>
+              </div>
+          </div>
+          <div>
+            <img src="../movies/thomas-kinto-6MsMKWzJWKc-unsplash.jpg" alt="" class="w-[700px] hidden md:block">
+          </div>
+      </div>
+    </div>
+  </div>
+      <!--Start Top IMDB-->
+      <div class=" hidden IMDB">
+        <nav class="container mx-auto w-full text-white bg-gray-600 px-2 py-1 flex items-center justify-start space-x-28">
+          <div class="flex items-center ">
+            <ion-icon name="logo-mastodon" class="text-4xl"></ion-icon>
+            <span class="text-[30px]">Name</span>
+            </div>
+            <ion-icon id="menuBtn"
+          name="menu-outline"
+          class="flex self-end md:hidden text-4xl"
+        ></ion-icon>
+            <div class="flex items-center">
+              <ul class="hidden md:flex space-x-4 items-center">
+                <li class="hover:underline decoration-solid hover:text-green-500 transition-all delay-75 cursor-pointer" id="home3">Home</li>
+                <li class="hover:underline decoration-solid hover:text-green-500 transition-all delay-75 cursor-pointer" id="country3">Country</li>
+                <li class="hover:underline decoration-solid hover:text-green-500 transition-all delay-75 cursor-pointer" id="movies3">Movies</li>
+                <li class="hover:underline decoration-solid hover:text-green-500 transition-all delay-75 cursor-pointer" id="shows3">TV Shows</li>
+                <li class="hover:underline decoration-solid hover:text-green-500 transition-all delay-75 cursor-pointer" id="IMDB3">Top IMDB</li>
+                <li class="hover:underline decoration-solid hover:text-green-500 transition-all delay-75 cursor-pointer">Andoid App</li>
+                <li>
+                  <button id="login4" class="bg-green-600 hover:bg-gray-500 cursor-pointer rounded-lg px-3 py-1">Log in</button>
+                </li>
+                  <button
+                    class="px-10 py-2 bg-slate-800 flex items-center space-x-2 rounded-2xl"
+                  >
+                    <ion-icon name="search-outline"></ion-icon>Enter Keywords...
+                  </button>
+                </li>
+              </ul>
+            </div>
+            </nav>
+      <section class="container w-full bg-slate-900 mx-auto text-white px-2 py-1 flex flex-col space-y-4">
+        <div class="flex space-x-5 justify-start items-center">
+        <div class="w-2 h-10 bg-green-600 "></div>
+        <span class="text-[34px] font-bold">Top IMDB Rating</span>
+        <button class="bg-gray-800 rounded-2xl px-4 py-1">All</button>
+        <button class="bg-gray-800 rounded-2xl px-4 py-1">Movies</button>
+        <button class="bg-gray-800 rounded-2xl px-4 py-1">TV Shows</button>
+      </div>  
+      <div class="flex justify-center items-center space-x-2">
+        <div class="w-6 h-6 bg-gray-800 flex items-center justify-center "><ion-icon name="chevron-back-outline"></ion-icon></div>
+        <div class="w-6 h-6 bg-green-600 flex items-center justify-center">1</div>
+        <div class="w-6 h-6 bg-gray-800 flex items-center justify-center">2</div>
+        <div class="w-6 h-6 bg-gray-800 flex items-center justify-center ">3</div>
+        <div class="w-6 h-6 bg-gray-800 flex items-center justify-center "></div>
+      </div>
+      <div>
+        <div class="flex flex-row justify-between items-center space-x-3">
+          <div class="bg-black w-52 h-64 rounded-lg relative">
+            <img src="../movies/film.jpg" alt="" class="w-60 h-[210px] rounded-t-lg" />
+            <div
+              class="flex justify-between items-center absolute bottom-[20px] text-white"
+            >
+              <p>Name1</p>
+              <p>2023</p>
+            </div>
+          </div>
+          <div class="bg-black w-52 h-64 rounded-lg relative">
+            <img src="../movies/judy.jpg" alt="" class="w-60 h-[210px] rounded-t-lg" />
+            <div
+              class="flex justify-between items-center absolute bottom-[20px] text-white"
+            >
+              <p>Name1</p>
+              <p>2023</p>
+            </div>
+          </div>
+          <div class="bg-black w-52 h-64 rounded-lg relative">
+            <img src="../movies/spider.jpg" alt="" class="w-60 h-[210px] rounded-t-lg" />
+            <div
+              class="flex justify-between items-center absolute bottom-[20px] text-white"
+            >
+              <p>Name1</p>
+              <p>2023</p>
+            </div>
+          </div>
+          <div class="bg-black w-52 h-64 rounded-lg relative">
+            <img id="m1" src="../movies/tim-oun-uXCy7ixz30w-unsplash.jpg" alt="" class="w-60 h-[210px] rounded-t-lg" />
+            <div class="flex justify-between absolute bottom-[20px] text-white">
+              <p>Name1</p>
+              <p>2023</p>
+            </div>
+          </div>
+          <div class="bg-black w-52 h-64 rounded-lg relative">
+            <img src="../movies/carol-kennedy-1rojtQgU0p4-unsplash.jpg" alt="" class="w-60 h-[210px] rounded-t-lg" />
+            <div
+              class="flex justify-between items-center absolute bottom-[20px] text-white"
+            >
+              <p>Name1</p>
+              <p>2023</p>
+            </div>
+          </div>
+          <div class="bg-black w-52 h-64 rounded-lg relative">
+            <img src="../movies/darryl-brian-rgPRoZt8yg4-unsplash.jpg" alt="" class="w-60 h-[210px] rounded-t-lg" />
+            <div
+              class="flex justify-between items-center absolute bottom-[20px] text-white"
+            >
+              <p>Name1</p>
+              <p>2023</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--Start Nextrow-->
+      <div class="flex flex-row justify-between items-center space-x-3 mt-3">
+        <div class="bg-black w-52 h-64 rounded-lg relative">
+          <img src="../movies/yannick-van-der-schot-p4RbIDJAfZg-unsplash.jpg" alt="" class="w-60 h-[210px] rounded-t-lg" />
+          <div
+            class="flex justify-between items-center absolute bottom-[20px] text-white"
+          >
+            <p>Name1</p>
+            <p>2023</p>
+          </div>
+        </div>
+        <div class="bg-black w-52 h-64 rounded-lg relative">
+          <img src="../movies/dev-d2Py_uhXJQo-unsplash.jpg" alt="" class="w-60 h-[210px] rounded-t-lg" />
+          <div
+            class="flex justify-between items-center absolute bottom-[20px] text-white"
+          >
+            <p>Name1</p>
+            <p>2023</p>
+          </div>
+        </div>
+        <div class="bg-black w-52 h-64 rounded-lg relative">
+          <img src="../movies/erik-mclean-Np_8Kt_QHZU-unsplash.jpg" alt="" class="w-60 h-[210px] rounded-t-lg" />
+          <div
+            class="flex justify-between items-center absolute bottom-[20px] text-white"
+          >
+            <p>Name1</p>
+            <p>2023</p>
+          </div>
+        </div>
+        <div class="bg-black w-52 h-64 rounded-lg relative">
+          <img src="../movies/tim-oun-uXCy7ixz30w-unsplash.jpg" alt="" class="w-60 h-[210px] rounded-t-lg" />
+          <div
+            class="flex justify-between items-center absolute bottom-[20px] text-white"
+          >
+            <p>Name1</p>
+            <p>2023</p>
+          </div>
+        </div>
+        <div class="bg-black w-52 h-64 rounded-lg relative">
+          <img src="../movies/film.jpg" alt="" class="w-60 h-[210px] rounded-t-lg " />
+          <div
+            class="flex justify-between items-center absolute bottom-[20px] text-white"
+          >
+            <p>Name1</p>
+            <p>2023</p>
+          </div>
+        </div>
+        <div class="bg-black w-52 h-64 rounded-lg relative">
+          <img src="../movies/collection.jpg" alt="" class="w-60 h-[210px] rounded-t-lg" />
+          <div
+            class="flex justify-between items-center absolute bottom-[20px] text-white"
+          >
+            <p>Name1</p>
+            <p>2023</p>
+          </div>
+        </div>
+      </div>
+      <!--Start Nextrow-->
+      <div class="flex flex-row justify-between items-center space-x-3">
+        <div class="bg-black w-52 h-64 rounded-lg relative">
+          <img src="../movies/film.jpg" alt="" class="w-60 h-[210px] rounded-t-lg" />
+          <div
+            class="flex justify-between items-center absolute bottom-[20px] text-white"
+          >
+            <p>Name1</p>
+            <p>2023</p>
+          </div>
+        </div>
+        <div class="bg-black w-52 h-64 rounded-lg relative">
+          <img src="../movies/judy.jpg" alt="" class="w-60 h-[210px] rounded-t-lg" />
+          <div
+            class="flex justify-between items-center absolute bottom-[20px] text-white"
+          >
+            <p>Name1</p>
+            <p>2023</p>
+          </div>
+        </div>
+        <div class="bg-black w-52 h-64 rounded-lg relative">
+          <img src="../movies/spider.jpg" alt="" class="w-60 h-[210px] rounded-t-lg" />
+          <div
+            class="flex justify-between items-center absolute bottom-[20px] text-white"
+          >
+            <p>Name1</p>
+            <p>2023</p>
+          </div>
+        </div>
+        <div class="bg-black w-52 h-64 rounded-lg relative">
+          <img src="../movies/tim-oun-uXCy7ixz30w-unsplash.jpg" alt="" class="w-60 h-[210px] rounded-t-lg" />
+          <div class="flex justify-between absolute bottom-[20px] text-white">
+            <p>Name1</p>
+            <p>2023</p>
+          </div>
+        </div>
+        <div class="bg-black w-52 h-64 rounded-lg relative">
+          <img src="../movies/carol-kennedy-1rojtQgU0p4-unsplash.jpg" alt="" class="w-60 h-[210px] rounded-t-lg" />
+          <div
+            class="flex justify-between items-center absolute bottom-[20px] text-white"
+          >
+            <p>Name1</p>
+            <p>2023</p>
+          </div>
+        </div>
+        <div class="bg-black w-52 h-64 rounded-lg relative">
+          <img src="../movies/darryl-brian-rgPRoZt8yg4-unsplash.jpg" alt="" class="w-60 h-[210px] rounded-t-lg" />
+          <div
+            class="flex justify-between items-center absolute bottom-[20px] text-white"
+          >
+            <p>Name1</p>
+            <p>2023</p>
+          </div>
+        </div>
+      </div>
+   
+    <!--Start Nextrow-->
+    <div class="flex flex-row justify-between items-center space-x-3 mt-3">
+      <div class="bg-black w-52 h-64 rounded-lg relative">
+        <img src="../movies/yannick-van-der-schot-p4RbIDJAfZg-unsplash.jpg" alt="" class="w-60 h-[210px] rounded-t-lg" />
+        <div
+          class="flex justify-between items-center absolute bottom-[20px] text-white"
+        >
+          <p>Name1</p>
+          <p>2023</p>
+        </div>
+      </div>
+      <div class="bg-black w-52 h-64 rounded-lg relative">
+        <img src="../movies/dev-d2Py_uhXJQo-unsplash.jpg" alt="" class="w-60 h-[210px] rounded-t-lg" />
+        <div
+          class="flex justify-between items-center absolute bottom-[20px] text-white"
+        >
+          <p>Name1</p>
+          <p>2023</p>
+        </div>
+      </div>
+      <div class="bg-black w-52 h-64 rounded-lg relative">
+        <img src="../movies/erik-mclean-Np_8Kt_QHZU-unsplash.jpg" alt="" class="w-60 h-[210px] rounded-t-lg" />
+        <div
+          class="flex justify-between items-center absolute bottom-[20px] text-white"
+        >
+          <p>Name1</p>
+          <p>2023</p>
+        </div>
+      </div>
+      <div class="bg-black w-52 h-64 rounded-lg relative">
+        <img src="../movies/tim-oun-uXCy7ixz30w-unsplash.jpg" alt="" class="w-60 h-[210px] rounded-t-lg" />
+        <div
+          class="flex justify-between items-center absolute bottom-[20px] text-white"
+        >
+          <p>Name1</p>
+          <p>2023</p>
+        </div>
+      </div>
+      <div class="bg-black w-52 h-64 rounded-lg relative">
+        <img src="../movies/film.jpg" alt="" class="w-60 h-[210px] rounded-t-lg " />
+        <div
+          class="flex justify-between items-center absolute bottom-[20px] text-white"
+        >
+          <p>Name1</p>
+          <p>2023</p>
+        </div>
+      </div>
+      <div class="bg-black w-52 h-64 rounded-lg relative">
+        <img src="../movies/collection.jpg" alt="" class="w-60 h-[210px] rounded-t-lg" />
+        <div
+          class="flex justify-between items-center absolute bottom-[20px] text-white"
+        >
+          <p>Name1</p>
+          <p>2023</p>
+        </div>
+      </div>
+    </div>
+    <!--Start Nextrow-->
+    <div class="flex flex-row justify-between items-center space-x-3 mt-3">
+      <div class="bg-black w-52 h-64 rounded-lg relative">
+        <img src="../movies/yannick-van-der-schot-p4RbIDJAfZg-unsplash.jpg" alt="" class="w-60 h-[210px] rounded-t-lg" />
+        <div
+          class="flex justify-between items-center absolute bottom-[20px] text-white"
+        >
+          <p>Name1</p>
+          <p>2023</p>
+        </div>
+      </div>
+      <div class="bg-black w-52 h-64 rounded-lg relative">
+        <img src="../movies/dev-d2Py_uhXJQo-unsplash.jpg" alt="" class="w-60 h-[210px] rounded-t-lg" />
+        <div
+          class="flex justify-between items-center absolute bottom-[20px] text-white"
+        >
+          <p>Name1</p>
+          <p>2023</p>
+        </div>
+      </div>
+      <div class="bg-black w-52 h-64 rounded-lg relative">
+        <img src="../movies/erik-mclean-Np_8Kt_QHZU-unsplash.jpg" alt="" class="w-60 h-[210px] rounded-t-lg" />
+        <div
+          class="flex justify-between items-center absolute bottom-[20px] text-white"
+        >
+          <p>Name1</p>
+          <p>2023</p>
+        </div>
+      </div>
+      <div class="bg-black w-52 h-64 rounded-lg relative">
+        <img src="../movies/tim-oun-uXCy7ixz30w-unsplash.jpg" alt="" class="w-60 h-[210px] rounded-t-lg" />
+        <div
+          class="flex justify-between items-center absolute bottom-[20px] text-white"
+        >
+          <p>Name1</p>
+          <p>2023</p>
+        </div>
+      </div>
+      <div class="bg-black w-52 h-64 rounded-lg relative">
+        <img src="../movies/film.jpg" alt="" class="w-60 h-[210px] rounded-t-lg " />
+        <div
+          class="flex justify-between items-center absolute bottom-[20px] text-white"
+        >
+          <p>Name1</p>
+          <p>2023</p>
+        </div>
+      </div>
+      <div class="bg-black w-52 h-64 rounded-lg relative">
+        <img src="../movies/collection.jpg" alt="" class="w-60 h-[210px] rounded-t-lg" />
+        <div
+          class="flex justify-between items-center absolute bottom-[20px] text-white"
+        >
+          <p>Name1</p>
+          <p>2023</p>
+        </div>
+      </div>
+    </div>
+    <div class="flex justify-center items-center text-white space-x-2 mb-5">
+      <div class="w-6 h-6 bg-gray-800 flex items-center justify-center "><ion-icon name="chevron-back-outline"></ion-icon></div>
+      <div class="w-6 h-6 bg-green-600 flex items-center justify-center">1</div>
+      <div class="w-6 h-6 bg-gray-800 flex items-center justify-center">2</div>
+      <div class="w-6 h-6 bg-gray-800 flex items-center justify-center ">3</div>
+      <div class="w-6 h-6 bg-gray-800 flex items-center justify-center "></div>
+    </div>
+    </section>
+
+      <footer class="bg-gray-900">
+        <div class="mx-auto w-full max-w-screen-xl">
+          <div class="grid grid-cols-3 gap-8 px-4 py-6 lg:py-8 md:grid-cols-5 md:gap-4">
+            <div>
+                <h2 class="mb-6 text-[20px] font-semibold text-white">Links</h2>
+                <ul class="text-gray-500 dark:text-gray-400 font-medium">
+                    <li class="mb-4">
+                        <a href="#" class=" hover:underline">Movies</a>
+                    </li>
+                    <li class="mb-4">
+                        <a href="#" class="hover:underline">TV shows</a>
+                    </li>
+                    <li class="mb-4">
+                        <a href="#" class="hover:underline">Top IMDB</a>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                
+                <ul class="text-gray-500 dark:text-gray-400 font-medium">
+                    <li class="mb-4">
+                        <a href="#" class="hover:underline">Action Movies</a>
+                    </li>
+                    <li class="mb-4">
+                        <a href="#" class="hover:underline">Horror Movies</a>
+                    </li>
+                    <li class="mb-4">
+                        <a href="#" class="hover:underline">Sci-fic Movies</a>
+                    </li>
+                    <li class="mb-4">
+                        <a href="#" class="hover:underline">Thriller Movies</a>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                
+                <ul class="text-gray-500 dark:text-gray-400 font-medium">
+                    <li class="mb-4">
+                        <a href="#" class="hover:underline">Android App</a>
+                    </li>
+                    <li class="mb-4">
+                        <a href="#" class="hover:underline">Contact</a>
+                    </li>
+                    <li class="mb-4">
+                        <a href="#" class="hover:underline">Term of service</a>
+                    </li>
+                    <li class="mb-4">
+                      <a href="#" class="hover:underline"><li class="mb-4">
+                        <a href="#" class="hover:underline">Sitemap</a>
+                    </li></a>
+                  </li>
+                </ul>
+            </div>
+            <div>
+                <h2 class="mb-6 text-[20px] font-semibold text-white">About Us</h2>
+                <ul class="text-gray-500 dark:text-gray-400 font-medium">
+                    <li class="mb-4">
+                        <a href="#" class="w-full">This is free tv shows streaming website with zero ads, it allows you watch tv shows online, watch tv shows online free in<br>
+                          high quality for free. You can also download full tv shows and watch it later if you want.<br>
+                          This site does not store any files on our server, we only linked to the media which is hosted on 3rd party services.
+                        </a>
+                    </li>
+                </ul>
+                <div class="text-green-500 flex flex-row space-x-4 items-center">
+                  <p class="text-[8px] xl:text-[15px]">High quality</p>
+                  <p class="text-[8px] xl:text-[15px]">Free forever</p>
+                  <p class="text-[8px] xl:text-[15px]">Fast load</p>
+                  <p class="text-[8px] xl:text-[15px]">Multi subtitles</p>
+                </div>
+            </div>
+            
+            <div>
+              <img src="../movies/thomas-kinto-6MsMKWzJWKc-unsplash.jpg" alt="" class="w-[700px] hidden md:block">
+            </div>
+        </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+      <!--Start Login-->
+      <div class="hidden login">
+      <div class="flex justify-center items-center md:grid grid-cols-2 gap-0  bg-white ">
+        <img src="../movies/charlesdeluvio-jtmwD4i4v1U-unsplash.jpg" alt="" class="hidden md:block">
+        <div class="flex flex-col items-center justify-center space-y-5">
+          <p class="text-[40px]">Welcome Back!</p>
+          <p class="text-[22px] opacity-[0.8]">You can start watching movies and series free</p>
+         
+          <div class=" opacity-[0.5] text-[22px] rounded-md bg-gray-400 px-3 w-[350px] flex items-center">
+            <ion-icon name="mail-unread-outline"></ion-icon>you@example.com
+          </div>
+            <div class="opacity-[0.5] text-[22px] rounded-md bg-gray-400 px-3 w-[350px]">
+              <ion-icon name="lock-closed-outline"></ion-icon>At least 8 characters
+            </div>
+          <p class="text-blue-400 text-[22px]">Forgot password?</p>
+          <button class="bg-blue-600 text-[25px] text-white w-[350px] hover:bg-gray-500">Login</button>
+          <div class="flex items-center ">
+            <hr class="bg-black w-24 mr-4">
+          <span text-[25px]>or</span><hr>
+          <hr class="bg-black w-24 ml-4">
+          </div>
+          
+          <div class="flex justify-around items-center space-x-3">
+            <button class="border-black border-solid border-2 text-[25px] w-[170px] flex items-center rounded-md">
+              <ion-icon name="logo-google" class="mr-1  text-blue-700 text-4xl"></ion-icon>
+              <span>Google</span>
+            </button>
+            <button class="border-black border-solid border-2 text-[25px] w-[170px] flex items-center rounded-md">
+              <ion-icon name="logo-facebook" class="text-4xl mr-1 text-blue-700"></ion-icon>
+              <span>Facebook</span>
+            </button>
+          </div>
+          <ion-icon name="arrow-back" class="text-4xl" id="back"></ion-icon>
+        </div>
+        
+      </div>
+    </div>
+  </body>
+</html>
